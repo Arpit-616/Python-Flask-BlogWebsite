@@ -1,0 +1,19 @@
+{
+  "params": {
+    "local_server": "TRUE",
+    "local_uri": "mysql+pymysql://root:@localhost/the_ai_coders",
+    "prod_uri": "mysql+pymysql://root:@localhost/the_ai_coders",
+    "fb_url": "https://facebook.com/the_ai_coders",
+    "tw_url": "https://x.com/the_ai_coders",
+    "google_url": "mailto:as9152167@gmail.com",
+    "git_url": "https://github.com/the_ai_coders",
+    "blog_name": "THE AI CODERS",
+    "gmail-user": "as9152167@gmail.com",
+    "gmail-password": "xkto myia nvyd fjch",
+    "about_text": "Hii, I am Arpit Srivastava currently pursuing Btech in IT department.",
+    "no_of_posts": 3,
+    "admin_user": "arpit",
+    "admin_password": "1234",
+    "upload_location": "c:/Users/ARPIT SRIVASTAVA/Desktop/flask/arpit/static/uploads"
+  }
+}
