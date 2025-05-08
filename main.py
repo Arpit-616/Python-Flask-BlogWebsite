@@ -1,4 +1,4 @@
-from flask import Flask,render_template,request, session
+from flask import Flask,render_template,request, session,flash
 from flask_sqlalchemy import SQLAlchemy
 from flask_mail import Mail, Message
 import json
@@ -65,6 +65,7 @@ class Posts(db.Model):
 
 @app.route("/")
 def home():
+     flash("      Welcome to my blog!","success")
      # Use the renamed Posts class
      all_posts = Posts.query.filter_by().all()
      last=math.ceil(len(all_posts)/int(params['no_of_posts']))+1
@@ -164,6 +165,7 @@ def delete(sl_no):
 
 @app.route("/contact",methods=['GET','POST'])
 def contacts():
+     flash("Thank you!! for submitting your message.","success")
      if request.method == 'POST':
           name=request.form.get('name')
           email=request.form.get('email')
