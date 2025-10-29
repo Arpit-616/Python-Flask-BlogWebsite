@@ -1,5 +1,5 @@
 from flask import Flask,render_template,request, session,flash
-from flask_sqlalchemy import SQLAlchemy
+# from flask_sqlalchemy import SQLAlchemy
 from flask_mail import Mail, Message
 import json
 from werkzeug.utils import secure_filename
@@ -36,13 +36,13 @@ app.config.update(
 )
 
 # Configure SQLAlchemy
-if(local_server):
-    app.config["SQLALCHEMY_DATABASE_URI"] = params["local_uri"]
-else:
-    app.config["SQLALCHEMY_DATABASE_URI"] = params["prod_uri"]
+# if(local_server):
+#     app.config["SQLALCHEMY_DATABASE_URI"] = params["local_uri"]
+# else:
+#     app.config["SQLALCHEMY_DATABASE_URI"] = params["prod_uri"]
 
-# Initialize extensions
-db = SQLAlchemy(app)
+# # Initialize extensions
+# db = SQLAlchemy(app)
 mail = Mail(app)
 
 
